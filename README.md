@@ -9,13 +9,13 @@ InternImage-OOD is a cutting-edge framework designed to enhance OOD detection by
 ## Methodology
 
 The core methodology is based on the following steps:
-1. **Feature Extraction**: The InternImage model extracts feature embeddings ( \( F \) ) from input images, represented as:
+1. **Feature Extraction**: The InternImage model extracts feature embeddings (\( F \)) from input images, represented as:
 
-\[
-F = \left\{ f_k \in \mathbb{R}^{D \times H \times W} \right\}_{k=1}^{M} = \text{FeatureEmbedding}(I)
-\]
+   \[
+   F = \{ f_k \in \mathbb{R}^{D \times H \times W} \}_{k=1}^{M} = \text{FeatureEmbedding}(I)
+   \]
 
-where \( I \) is the input image, \( D \) is the feature dimension, and \( H \times W \) is the spatial resolution.
+   where \( I \) is the input image, \( D \) is the feature dimension, and \( H \times W \) is the spatial resolution.
 
 
 2. **OOD Detection**: KMeans clustering is applied to these feature embeddings to detect OOD regions:
