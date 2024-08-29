@@ -47,6 +47,8 @@ However, it is worth noting that while the overall performance was strong, there
    - Run the feature extraction process on your dataset.
    - Save the extracted features in the specified directory structure.
 
+(You can download a case of [checkpoint](https://huggingface.co/OpenGVLab/InternImage/resolve/main/upernet_internimage_xl_512x1024_160k_cityscapes.pth) here!!!)
+
 3. **Training KMeans**:
    - Train the KMeans model on the extracted features.
 
