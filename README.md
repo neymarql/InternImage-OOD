@@ -9,11 +9,11 @@ InternImage-OOD is a cutting-edge framework designed to enhance OOD detection by
 ## Methodology
 
 The core methodology is based on the following steps:
-1. **Feature Extraction**: The InternImage model extracts feature embeddings (\( F \)) from input images, represented as:
-    \[
-    F = \{ f_k \in \mathbb{R}^{D \times H \times W} \}_{k=1}^{M} = \text{FeatureEmbedding}(I)
-    \]
-    where \( I \) is the input image, \( D \) is the feature dimension, and \( H \times W \) is the spatial resolution.
+1. **Feature Extraction**: The InternImage model extracts feature embeddings \( F \) from input images, represented as:
+\[
+F = \{f_k \in \mathbb{R}^{D \times H \times W}\}_{k=1}^{M} = \text{FeatureEmbedding}(I)
+\]
+where \( I \) is the input image, \( D \) is the feature dimension, and \( H \times W \) is the spatial resolution.
 
 2. **OOD Detection**: KMeans clustering is applied to these feature embeddings to detect OOD regions:
     - \( P \) denotes the predicted class map, where each pixel is assigned a label by the InternImage model.
@@ -26,14 +26,13 @@ The core methodology is based on the following steps:
 
 Considering the time constraints of the competition and to demonstrate the effectiveness of our method on smaller datasets, we used only the Mapillary Vistas and Cityscapes datasets for this experiment. Despite the limited data, InternImage-OOD achieved the top spot in the BRAVO Challenge, with a Bravo Index of 0.6263.
 
-However, it is worth noting that while the overall performance was strong, there is still room for improvement in OOD detection. Future work will focus on advancing this area.
-
+Our method achieved the following results in the BRAVO Challenge:
 | Method             | Bravo Index | Semantic | OOD    |
 |--------------------|-------------|----------|--------|
 | InternImage-OOD    | **0.6263**  | 0.6934   | 0.5710 |
 | Ablation (no KMeans)| 0.6208     | 0.6933   | 0.5621 |
 
-Our method achieved the following results in the BRAVO Challenge:
+However, it is worth noting that while the overall performance was strong, there is still room for improvement in OOD detection. Future work will focus on advancing this area.
 
 ## Example Usage
 
