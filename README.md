@@ -107,8 +107,9 @@ If you find this project helpful in your research, please consider citing:
   year={2022},
 }
 
+```
+
 ## Acknowledgments
 
 We would like to thank the BRAVO Challenge organizers for providing the platform and resources to evaluate our methods. Special thanks to our team members for their dedication and hard work throughout this project. This work was supported by CASIA and UCAS.
 
-```
