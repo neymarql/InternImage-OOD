@@ -28,6 +28,13 @@ Considering the time constraints of the competition and to demonstrate the effec
 
 However, it is worth noting that while the overall performance was strong, there is still room for improvement in OOD detection. Future work will focus on advancing this area.
 
+| Method             | Bravo Index | Semantic | OOD    |
+|--------------------|-------------|----------|--------|
+| InternImage-OOD    | **0.6263**  | 0.6934   | 0.5710 |
+| Ablation (no KMeans)| 0.6208     | 0.6933   | 0.5621 |
+
+Our method achieved the following results in the BRAVO Challenge:
+
 ## Example Usage
 
 1. **Setup**: 
