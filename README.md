@@ -55,7 +55,7 @@ Our method achieved the following results in the BRAVO Challenge:
 ## Citation
 
 If you find this project helpful in your research, please consider citing:
-
+> 
 @article{wang2022internimage,
   title={InternImage: Exploring Large-Scale Vision Foundation Models with Deformable Convolutions},
   author={Wang, Wenhai and Dai, Jifeng and Chen, Zhe and Huang, Zhenhang and Li, Zhiqi and Zhu, Xizhou and Hu, Xiaowei and Lu, Tong and Lu, Lewei and Li, Hongsheng and others},
